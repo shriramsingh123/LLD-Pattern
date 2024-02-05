@@ -1,0 +1,35 @@
+
+The singleton design pattern is a creational design pattern that ensures a class has only one instance
+ and provides a global access point to that instance. In other words, it guarantees that there is only
+ one object of a particular class in your entire program, and there's a single way to access that object.
+
+Here are some key points about the singleton design pattern:
+
+*Core principles:
+->Single instance: The class can only have one instance.
+->Global access point: There's a single static method to access the instance.
+->Private constructor: The constructor is private to prevent direct instantiation.
+
+
+*Benefits:
+->Enforces global state: Useful for managing global resources like configuration settings or logging systems.
+->Reduces memory usage: By having only one instance, you save memory compared to creating multiple objects.
+->Simplifies access: Provides a central point to access the object's functionality.
+
+
+*Drawbacks:
+->Tight coupling: Can make code less testable and harder to reason about.
+->Anti-pattern potential: Overuse can lead to rigid and inflexible code.
+->Threading issues: Requires careful handling in multithreaded environments.
+
+
+*When to use it:
+ ->When you need a single, globally accessible object.
+ ->When managing resources like files, databases, or configuration settings.
+ ->When simplifying access to complex functionality.
+
+
+*When to avoid it:
+ ->When there's no clear need for a single instance.
+ ->When flexibility and testability are more important than global state.
+ ->In multithreaded environments without proper handling.
