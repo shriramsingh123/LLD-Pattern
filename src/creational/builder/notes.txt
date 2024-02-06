@@ -1,0 +1,25 @@
+
+The Builder design pattern provides a step-by-step approach to constructing complex objects with numerous
+ optional or configurable parameters. It separates the object creation process from its representation,
+  offering several benefits:
+
+*Key Characteristics:
+ ->Builder class: Responsible for constructing the object step-by-step, often with fluent methods
+        allowing chained calls.
+ ->Mandatory vs. Optional parameters: Some parameters might be essential for object creation,
+        while others are optional.
+ ->Immutable intermediate state: The Builder object is usually immutable, ensuring the object
+        is only built once in its final state.
+ ->Method to obtain the final object: The Builder provides a method like build() to retrieve the
+        constructed object.
+
+
+*Benefits:
+ ->Improved readability: Complex object creation becomes clearer and easier to follow.
+ ->Flexibility: Allows setting optional parameters as needed.
+ ->Immutability: Ensures final object integrity and simplifies testing.
+ ->Reusability: The Builder can be reused to create different variations of the same object type.
+
+*Drawbacks:
+ ->Increased complexity: Introduces additional classes compared to direct construction.
+ ->Overuse potential: Not necessary for simple objects with few parameters.
